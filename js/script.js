@@ -99,9 +99,6 @@ function escalaGrises(){
         banderaGris = false;
     }
     
-    // let boton = document.querySelector(".icono-accesibilidad");
-    // boton.style.position = "fixed";
-    // boton.style.top = "50%";
 }
 
 function altoContraste() {
