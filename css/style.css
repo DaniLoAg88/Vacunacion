@@ -1,0 +1,103 @@
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    color: #005196;
+    /* font-size: 1.2em; */
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 95px;
+}
+
+.header img{
+    height: 90px;
+}
+
+hr{
+    border: 0.01px solid #4d4d4d00;
+    box-shadow: 0 3px 3px 0 rgba(100, 100, 100, 0.8);
+}
+
+.accesibilidad{
+    position: fixed;
+    top: 100;
+    right: -220px; /* Oculto por defecto*/
+    background-color: #005196;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    /* el z-index para sobreponer un elemento sobre otro */
+    z-index: 1000;
+    transition: right 0.3s ease; /* Transición de 0.3 segundos para mostrar/ocultar */
+}
+
+.accesibilidad h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.accesibilidad button{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.icono-accesibilidad{
+    position: fixed;
+    top: 50%;
+    right: 5px;
+    border: 2px solid #005196;
+    border-radius: 50%;          /**CAMBIAR PARA MOSTRAR ABAJO*/
+    /* position: absolute;
+    top: 150px;
+    right: 1px;
+    border: 1px solid #005196;
+    border-radius: 5%; */
+}
+
+.icono-accesibilidad:hover{
+    cursor: pointer;
+    background-color: #4d4d4d57;
+}
+
+.accesibilidad.mostrar{ /* Clase mostrar dentro de la clase accesibilidad*/
+    right: 0;
+}
+
+.icono-accesibilidad.mostrar{
+    right: 200px;     /*ELIMINAR PARA MOSTRAR BOTÓN REDONDO DEBAJO*/
+}
+
+.desplegable,
+.desplegable div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    color: #005196;
+}
+
+.desplegable p{
+    color: black;
+}
+
+.desplegable select{
+    height: 30px;
+}

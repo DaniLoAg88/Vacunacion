@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacunación CLM</title>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logosescam.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <!-- logo JCCM -->
+        <img src="img/LOGO JCCM.png" alt="Logo Junta de comunidades CLM">
+        <!-- Título de la página -->
+        <h1>Calendario de vacunación infantil</h1>
+        <!-- Logo sescam -->
+        <img src="img/SESCAM.svg.png" alt="Logo SESCAM">
+    </div>
+
+    <hr>
+
+    <div class="desplegable col-12">
+        <!-- Opciones para visualizar las vacunas -->
+        <div class="col-6">
+            <h3>Seleccione la edad de su hijo:</h3>
+        </div>
+        <div class="col-6">
+            <select name="desplegableEdad" id="desplegableEdad">
+                <option value="">Desplegue para seleccionar edad</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <p id="tituloSalida"></p>
+            <p id="salidaVacuna"></p>
+        </div>
+    </div>
+
+    <div class="icono-accesibilidad" onclick="mostrarOcultar()">
+        <!-- Icono de accesibilidad -->
+        <img src="img/accessible.svg" alt="Icono accesibilidad">
+    </div>
+
+    <!-- BARRA LATERAL DE ACCESIBILIDAD -->
+    <div class="accesibilidad">
+        <h2>Accesibilidad</h2>
+        <button id="aumentar">Aumentar fuente</button>
+        <button id="reducir">Reducir fuente</button>
+        <button id="escalaGrises">Escala de grises</button>
+        <button id="altoContraste">Alto contraste</button>
+        <button id="restablecer">Restablecer</button>
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
